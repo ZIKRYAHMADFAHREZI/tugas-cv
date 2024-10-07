@@ -1,0 +1,88 @@
+/* Style untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: pink;
+    color: black;
+}
+
+/* Style untuk judul */
+h1, h2 {
+    color: black;
+}
+
+/* Container utama */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style profil */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Gambar profil */
+.profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 2px solid #2c3e50;
+}
+
+/* Style untuk setiap bagian */
+.section {
+    margin-top: 20px;
+}
+
+/* Judul bagian */
+.section-title {
+    font-size: 1.5em;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style untuk list dalam pengalaman, pendidikan, dan keterampilan */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Style tambahan untuk teks di pengalaman */
+.experience p, .education p {
+    margin-left: 20px;
+    color: black;
+}
+
+
+
+/* Style responsive untuk mobile */
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 1.2em;
+    }
+}
